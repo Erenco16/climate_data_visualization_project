@@ -10,6 +10,9 @@ function App() {
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
+        <p>
+          This is a test paragraph to see if I can straight commit to the main branch
+        </p>
         <a
           className="App-link"
           href="https://reactjs.org"
