@@ -11,8 +11,8 @@ const Charts = ({ id }: { id: number }) => {
     const { scrollYProgress } = useScroll({ target: ref });
     const y = Parallax(scrollYProgress, 300);
 
-    const titles = ["BS chart 1", "BS chart 2"];
-    const texts = ["A lot of work for a non-UI/UX student", "Like seriously"];
+    const titles = ["BS chart 1", "BS chart 2","BS chart 3", "BS chart 4", "BS chart 5", "BS chart 6","BS chart 7"];
+    const texts = ["A lot of work for a non-UI/UX student", "Like seriously", "A lot of work for a non-UI/UX student", "Like seriously", "A lot of work for a non-UI/UX student", "Like seriously", "A lot of work for a non-UI/UX student"];
 
     // Fetch the iframe data when the component mounts
     useEffect(() => {
@@ -28,19 +28,21 @@ const Charts = ({ id }: { id: number }) => {
     }, []);
 
     return (
-        <section>
-            <motion.h1>{titles[id - 1]}</motion.h1>
-            <div ref={ref}>
-                {/* Render iframe only if the data is loaded */}
-                {iframes.length > 0 && (
-                    <div style={{height: "100%"}}
-                        // since we want to directly insert the embed code, we use the dangerouslySetInnerHTML to safely inject that HTML embed code into DOM
-                         dangerouslySetInnerHTML={{ __html: iframes[id - 1].embed_code }}
-                    />
-                )}
-            </div>
-            <motion.h2 style={{ y }}>{texts[id - 1]}</motion.h2>
-        </section>
+        <div className = "section-wrapper">
+            <section>
+                <h1>{titles[id - 1]}</h1>
+                <motion.h2 style={{y}}>{texts[id - 1]}</motion.h2>
+                <div ref={ref}>
+                    {/* Render iframe only if the data is loaded */}
+                    {iframes.length > 0 && (
+                        <div style={{height: "100%"}}
+                            // since we want to directly insert the embed code, we use the dangerouslySetInnerHTML to safely inject that HTML embed code into DOM
+                             dangerouslySetInnerHTML={{ __html: iframes[id - 1].embed_code }}
+                        />
+                    )}
+                </div>
+            </section>
+        </div>
     );
 }
 

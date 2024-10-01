@@ -134,6 +134,7 @@ body {
   }
 
   section {
+    margin-top: 40px;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -142,17 +143,17 @@ body {
     scroll-snap-align: center;
     perspective: 500px;
   }
-  
+
   section > div {
     width: 70%; /* the width of Iframes*/
     height: 60%;/* the height of Iframes*/
     position: relative;
     max-height: 90vh;
-    margin: 20px;
     background: var(--white);
     overflow: hidden;
+    margin: 20px 20px 20px;
   }
-  
+
   iframe {
     width: 100%;
     height: 100%;
@@ -175,13 +176,14 @@ body {
     margin: 0;
     color: var(--accent);
     text-align: center;
-    width:100%;
-    bottom:150px;
+    width:50%;
+    /*bottom:235px; */
     font-size: 56px;
     font-weight: 700;
     letter-spacing: -3px;
     line-height: 1.2;
-    position: absolute;
+    /*position: relative; */
+    padding-bottom: 20px;
   }
   section > p1{
     width: 70%; /* the width of Iframes*/
@@ -212,6 +214,14 @@ body {
     height: 5px;
     background: var(--accent);
     bottom: 40px;
+  }
+
+  .section-wrapper{
+    margin-top: 50px;
+  }
+
+  .displayAreaContainer newCanvasScrollbar droppableElement ui-droppable{
+    background-color: var(--evergreen);
   }
 
   
