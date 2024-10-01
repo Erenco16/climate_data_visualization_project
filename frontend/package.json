@@ -10,12 +10,8 @@
     "@types/node": "^16.18.111",
     "@types/react": "^18.3.9",
     "@types/react-dom": "^18.3.0",
-<<<<<<< HEAD:package.json
-    "framer-motion": "^11.9.0",
-=======
     "powerbi-client": "^2.23.1",
     "powerbi-client-react": "^1.4.0",
->>>>>>> a93e6384cab4b3e5abf2c5cf168d024c52319cc8:frontend/package.json
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
