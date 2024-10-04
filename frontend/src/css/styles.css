@@ -185,6 +185,22 @@ body {
     /*position: relative; */
     padding-bottom: 20px;
   }
+
+section > p {
+  margin: 20px auto;
+  color: var(--accent);
+  text-align: justify;
+  width: 25%;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
   section > p1{
     width: 70%; /* the width of Iframes*/
     height: 60%;/* the height of Iframes*/
