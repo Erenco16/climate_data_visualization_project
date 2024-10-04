@@ -30,7 +30,8 @@ const Charts = ({ id }: { id: number }) => {
 
     // Fetch the iframe data when the component mounts
     useEffect(() => {
-        fetch('/dashboards.json')
+        const timestamp = new Date().getTime(); // Generate a unique timestamp
+        fetch(`/dashboards.json?t=${timestamp}`) // Append it to the URL
             .then(response => response.json())
             .then(data => {
                 setIframes(data.embeds);

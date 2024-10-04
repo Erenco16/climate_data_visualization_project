@@ -44,7 +44,7 @@
     },
     {
       "id": "8",
-      "embed_code": "<div style='width:100%; height:100vh; overflow:hidden;'><iframe title=\"test_dashboard_8\" src=\"https://app.powerbi.com/view?r=eyJrIjoiODZmOTFjN2UtYmIxOS00M2M5LTlkMDItYjY0ZGZkMWI5YzUzIiwidCI6Ijg1NjAyOTA4LWUxNWItNDNiYS05MTQ4LTM4YmM3NzNhODE2ZSIsImMiOjl9\" frameborder=\"0\" allowFullScreen=\"true\" style=\"transform: scale(1); transform-origin: 0 0; width:100%; height:100%; border:none;\"></iframe></div>",
+      "embed_code": "<iframe title=\"iframe singular testing\" width=\"1024\" height=\"804\" src=\"https://app.powerbi.com/view?r=eyJrIjoiZTI5NWQwNWEtNGY4My00MWI1LTk0YzQtMDc3ZDhjNGY5ODViIiwidCI6Ijg1NjAyOTA4LWUxNWItNDNiYS05MTQ4LTM4YmM3NzNhODE2ZSIsImMiOjl9\" frameborder=\"0\" allowFullScreen=\"true\"></iframe>",
       "width": "100%",
       "height": "100%"
     }

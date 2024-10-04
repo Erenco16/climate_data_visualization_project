@@ -15,8 +15,9 @@ export default function App() {
   return (
       <>
           <Intro/>
-        {[1, 2, 3, 4, 5, 6, 7].map((id) => (
-            <Charts key={id} id={id}/>
+        {[1, 2, 3, 4, 5, 6, 7, 8].map((id) => (
+            <><Charts key={id} id={id}/>
+            </>
         ))}
         <motion.div className="progressBar" style={{ scaleX }} />
       </>
