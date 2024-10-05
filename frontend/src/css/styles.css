@@ -1,3 +1,15 @@
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 body {
     --black: #000000;
     --ash-black: #222;
@@ -13,6 +25,8 @@ body {
     --yellow: #ffbb00;
     --evergreen: #023430;
     --springGreen: #00ED64;
+    --ForestGreen: #00684A;
+    --SlateBlue: #001E2B;
   
     --background: var(--evergreen);
     --accent: var(--white);
@@ -134,6 +148,7 @@ body {
   }
 
   section {
+    margin-top: 40px;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -142,17 +157,16 @@ body {
     scroll-snap-align: center;
     perspective: 500px;
   }
-  
+
   section > div {
     width: 70%; /* the width of Iframes*/
     height: 60%;/* the height of Iframes*/
     position: relative;
     max-height: 90vh;
-    margin: 20px;
-    background: var(--white);
     overflow: hidden;
+    margin: 20px 20px 20px;
   }
-  
+
   iframe {
     width: 100%;
     height: 100%;
@@ -175,14 +189,31 @@ body {
     margin: 0;
     color: var(--accent);
     text-align: center;
-    width:100%;
-    bottom:150px;
+    width:50%;
+    /*bottom:235px; */
     font-size: 56px;
     font-weight: 700;
     letter-spacing: -3px;
     line-height: 1.2;
-    position: absolute;
+    /*position: relative; */
+    padding-bottom: 20px;
   }
+
+section > p {
+  margin: 20px auto;
+  color: var(--accent);
+  text-align: justify;
+  width: 25%;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
   section > p1{
     width: 70%; /* the width of Iframes*/
     height: 60%;/* the height of Iframes*/
@@ -195,7 +226,7 @@ body {
     height: 100%;
     border: none; /* Remove border */
   }
-  /* img {
+/*img {
     position: absolute;
     top: 0;
     left: 0;
@@ -203,7 +234,7 @@ body {
     bottom: 0;
     width: 100%;
     height: 100%;
-  } */
+  }*/
   
   .progressBar {
     position: fixed;
@@ -214,4 +245,112 @@ body {
     bottom: 40px;
   }
 
-  
+  .section-wrapper{
+    margin-top: 50px;
+  }
+
+  .displayAreaContainer newCanvasScrollbar droppableElement ui-droppable{
+    background-color: var(--evergreen);
+  }
+
+.mobile-charts {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.logo-container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  height: 10%;
+  object-fit: contain;
+}
+
+
+.turner {
+  animation: rotate 10s infinite linear;
+}
+
+.stable {
+  margin-left: 5vh;
+}
+
+@media (max-width: 900px) {
+  /* Styles for mobile devices */
+
+  .progressBar {
+    height: 5px;
+    background-color: #ffffff;
+  }
+
+
+  .mobile-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mobile-title-wrapper{
+    font-size: 5vh;
+    width: 75%;
+    height: 35%;
+    padding: 10px 0;
+    color: var(--springGreen);
+    text-align: center;
+  }
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height to center vertically */
+  text-align: center;
+}
+
+/* Adjust spacing between buttons */
+.button-container {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Styling for the first button */
+.b1 {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 2px solid #00684A;
+  background-color: #00684A;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Styling for the second button */
+.b2 {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 2px solid var(--white);
+  background-color: var(--SlateBlue);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Hover effects for buttons */
+.b1:hover {
+  background-color: #004C39;
+}
+
+.b2:hover {
+  background-color: var(--evergreen);
+  border: var(--evergreen);
+}

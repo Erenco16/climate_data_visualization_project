@@ -1,0 +1,22 @@
+{
+  "embeds": [
+    {
+      "id": "1",
+      "embed_code": "<img src='/image.png' alt='chart' width='100%' height='100%' />",
+      "width": "100%",
+      "height": "100%"
+    },
+    {
+      "id": "2",
+      "embed_code": "<img src='/image.png' alt='chart' width='100%' height='100%' />",
+      "width": "100%",
+      "height": "100%"
+    },
+    {
+      "id": "3",
+      "embed_code": "<img src='/image.png' alt='chart' width='100%' height='100%' />",
+      "width": "100%",
+      "height": "100%"
+    }
+  ]
+}
