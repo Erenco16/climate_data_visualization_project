@@ -5,7 +5,7 @@ import {motion, MotionValue, useScroll, useTransform} from "framer-motion";
 function Parallax(value: MotionValue<number>, distance: number) {
     return useTransform(value, [0, 1], [-distance, distance]);
 }
-const Charts = ({ id }: { id: number }) => {
+const Charts = ({ id , jsonFileName}: { id: number , jsonFileName: string}) => {
     const [iframes, setIframes] = useState<Array<any>>([]);
     const ref = useRef(null);
     const { scrollYProgress } = useScroll({ target: ref });
@@ -30,8 +30,7 @@ const Charts = ({ id }: { id: number }) => {
 
     // Fetch the iframe data when the component mounts
     useEffect(() => {
-        const timestamp = new Date().getTime(); // Generate a unique timestamp
-        fetch(`/dashboards.json?t=${timestamp}`) // Append it to the URL
+        fetch(jsonFileName) // Append it to the URL
             .then(response => response.json())
             .then(data => {
                 setIframes(data.embeds);
