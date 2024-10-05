@@ -5,6 +5,7 @@ import Charts from './components/Charts';
 import Intro from "./components/Intro";
 import '../css/styles.css';
 import MobileLayout from "./MobileLayout";
+import Header from "./components/Header";
 
 export default function App() {
     const { scrollYProgress } = useScroll();
@@ -21,7 +22,7 @@ export default function App() {
         (<MobileLayout/>)
         :
         (
-            <>
+            <>  <Header/>
                 <Intro />
                 {[1, 2, 3, 4, 5, 6, 7, 8].map((id) => (
                     <Charts key={id} id={id} jsonFileName={"./dashboards.json"} />

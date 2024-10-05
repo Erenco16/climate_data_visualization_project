@@ -3,7 +3,13 @@ import React from "react";
 const Intro = () => {
     return (
         <>
-            <div>Lets see if this works.</div>
+            <div className="section-wrapper">
+                <section>
+                    <div className="logo-container">
+                        <img className="logo turner" src="./circular-logo.svg" alt="Ket Logo"/>
+                        <img className="logo stable" src="./stable-logo.svg" alt="Ket Logo"/>
+                    </div>
+                </section></div>
         </>
     )
 }

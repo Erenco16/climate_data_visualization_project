@@ -149,7 +149,6 @@ body {
     height: 60%;/* the height of Iframes*/
     position: relative;
     max-height: 90vh;
-    background: var(--white);
     overflow: hidden;
     margin: 20px 20px 20px;
   }
@@ -213,7 +212,7 @@ section > p {
     height: 100%;
     border: none; /* Remove border */
   }
-  /* img {
+/*img {
     position: absolute;
     top: 0;
     left: 0;
@@ -221,7 +220,7 @@ section > p {
     bottom: 0;
     width: 100%;
     height: 100%;
-  } */
+  }*/
   
   .progressBar {
     position: fixed;
@@ -247,6 +246,64 @@ section > p {
   gap: 1rem;
 }
 
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.logo-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  width: 40%;
+  object-fit: contain;
+  padding: 10px 0;
+  position: relative;
+  margin: 0;
+}
+
+.turner {
+  animation: rotate 10s infinite linear;
+}
+
+.stable {
+  padding-left: 5px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: flex-start;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 25%;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: var(--background);
+  visibility: hidden; /* change this to adjust the header if you want. This is only for the desktop version.*/
+}
+
+.header {
+  width: 40%;
+  max-width: 200px;
+  object-fit: contain;
+  margin: 0;
+  height: auto;
+}
+
 @media (max-width: 800px) {
   /* Styles for mobile devices */
   .progressBar {
@@ -268,4 +325,3 @@ section > p {
   }
 }
 
-  
