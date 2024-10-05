@@ -21,6 +21,8 @@ body {
     padding: 0;
     background-color: var(--background);
     color: var(--accent);
+    max-width: 100%;
+    overflow-x: hidden;
   }
   
   * {
@@ -229,6 +231,7 @@ section > p {
     height: 5px;
     background: var(--accent);
     bottom: 40px;
+    width: 100%;
   }
 
   .section-wrapper{
@@ -271,34 +274,20 @@ section > p {
   object-fit: contain;
   padding: 10px 0;
   position: relative;
-  margin: 0;
-}
-
-.turner {
-  animation: rotate 10s infinite linear;
-}
-
-.stable {
-  padding-left: 5px;
+  margin: 0 10px 0 0;
 }
 
 .header-container {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 25%;
+  height: 15%;
   padding: 10px;
   box-sizing: border-box;
   background-color: var(--background);
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.header-container.visible {
-  opacity: 1;
 }
 
 
@@ -307,11 +296,23 @@ section > p {
   max-width: 200px;
   object-fit: contain;
   margin: 0;
-  height: auto;
 }
 
-@media (max-width: 900px) {
-  /* Styles for mobile devices */
+.stable{
+  height: 50%;
+  position: absolute;
+  left: 17vh;
+
+}
+
+.turner {
+  height: 100%;
+  animation: rotate 10s infinite linear;
+  position: absolute;
+  left: 0;
+}
+
+@media (max-width: 800px) {
 
   .progressBar {
     height: 5px;
