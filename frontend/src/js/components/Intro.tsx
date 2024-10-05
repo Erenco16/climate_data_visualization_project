@@ -1,13 +1,13 @@
 import React from "react";
+import CircularLogo from "./SVGDrawing";
 
 const Intro = () => {
     return (
         <>
             <div className="section-wrapper">
-                <section id="intro-section">
+                <section>
                     <div className="logo-container">
-                        <img className="logo turner" src="./circular-logo.svg" alt="Ket Logo"/>
-                        <img className="logo stable" src="./stable-logo.svg" alt="Ket Logo"/>
+                        <CircularLogo />
                     </div>
                 </section></div>
         </>
@@ -15,6 +15,3 @@ const Intro = () => {
 }
 
 export default Intro;
-
-
-
