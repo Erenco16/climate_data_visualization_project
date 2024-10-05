@@ -34,7 +34,6 @@ const Charts = ({ id , jsonFileName}: { id: number , jsonFileName: string}) => {
             .then(response => response.json())
             .then(data => {
                 setIframes(data.embeds);
-                console.log(data.embeds);
             })
             .catch(error => {
                 console.error("Error loading the dashboards json file: ", error);

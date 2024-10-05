@@ -293,8 +293,14 @@ section > p {
   padding: 10px;
   box-sizing: border-box;
   background-color: var(--background);
-  visibility: hidden; /* change this to adjust the header if you want. This is only for the desktop version.*/
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
+
+.header-container.visible {
+  opacity: 1;
+}
+
 
 .header {
   width: 40%;
@@ -304,24 +310,28 @@ section > p {
   height: auto;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   /* Styles for mobile devices */
+
   .progressBar {
     height: 5px;
-    background-color: #00ccff;
+    background-color: #ffffff;
   }
 
-  .section > h1{
-    transform: translateX(-50%);
-    font-size: 25vh;
-    text-align: center;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 100%;
+
+  .mobile-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mobile-title-wrapper{
+    font-size: 5vh;
+    width: 75%;
+    height: 35%;
     padding: 10px 0;
     color: var(--springGreen);
-    margin: 0;
+    text-align: center;
   }
 }
 

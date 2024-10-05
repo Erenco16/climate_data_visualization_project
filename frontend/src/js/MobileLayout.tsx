@@ -1,6 +1,5 @@
 import React from "react";
 import Intro from "./components/Intro";
-import Charts from "./components/Charts";
 import {motion, useScroll, useSpring} from "framer-motion";
 import MobileCharts from "./components/MobileCharts";
 

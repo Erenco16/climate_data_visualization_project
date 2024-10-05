@@ -23,7 +23,6 @@ const MobileCharts = ({ id, jsonFileName }: { id: number; jsonFileName: string }
             .then((response) => response.json())
             .then((data) => {
                 setIframes(data.embeds); // Store the array of embeds
-                console.log(data.embeds);
             })
             .catch((error) => {
                 console.error('Error loading the mobile dashboards JSON file: ', error);
@@ -31,12 +30,13 @@ const MobileCharts = ({ id, jsonFileName }: { id: number; jsonFileName: string }
     }, [jsonFileName]);
 
     return (
-        <div className="mobile-section-wrapper">
-            <section>
-                <motion.h1>{titles[id - 1]}</motion.h1>
+            <section className="mobile-section">
+                <div className="mobile-title-wrapper">
+                    <motion.h1>{titles[id - 1]}</motion.h1>
+                </div>
                 <div ref={ref}>
                     {iframes.length > 0 && id <= iframes.length && (
-                        <motion.div style={{ scaleY }} className="mobile-iframe-container">
+                        <motion.div className="mobile-iframe-container">
                             <div
                                 style={{ height: '100%', width: '100%' }}
                                 dangerouslySetInnerHTML={{ __html: iframes[id - 1].embed_code }} // Use the id to reference the correct embed
@@ -45,7 +45,6 @@ const MobileCharts = ({ id, jsonFileName }: { id: number; jsonFileName: string }
                     )}
                 </div>
             </section>
-        </div>
     );
 };
 
