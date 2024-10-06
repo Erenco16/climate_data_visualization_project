@@ -65,7 +65,7 @@ const LandingPage = () => {
                         exit={{ y: 20, opacity: 0 }}
                         transition={{ duration: 1.5 }}
                     >
-                        <h1 style={TitleStyle}>A Study and Analysis of Climate Change</h1>
+                        <h1 style={TitleStyle}>A Study and Analysis of <a href="https://science.nasa.gov/climate-change/what-is-climate-change/" target="_blank">Climate Change</a></h1>
                     </motion.div>
                     <motion.div>
                         <TypingEffect
