@@ -1,0 +1,34 @@
+{
+  "embeds": [
+    {
+      "id": "1",
+      "embed_code": "<iframe title=\"View_1\" width=\"600\" height=\"373.5\" src=\"https://app.powerbi.com/view?r=eyJrIjoiMDgzODk4NzgtNWJmMS00N2YzLWExZTYtY2Q2ZDUzNGY4OWY2IiwidCI6Ijg1NjAyOTA4LWUxNWItNDNiYS05MTQ4LTM4YmM3NzNhODE2ZSIsImMiOjl9\" frameborder=\"0\" allowFullScreen=\"true\"></iframe>",
+      "width": "100%",
+      "height": "100%"
+    },
+    {
+      "id": "2",
+      "embed_code": "<iframe title=\"View_2\" width=\"600\" height=\"373.5\" src=\"https://app.powerbi.com/view?r=eyJrIjoiYjMzNDczZGEtNWQ2Ny00NjM2LTgwZDktYjEzNmUyMmJmMzQ2IiwidCI6Ijg1NjAyOTA4LWUxNWItNDNiYS05MTQ4LTM4YmM3NzNhODE2ZSIsImMiOjl9\" frameborder=\"0\" allowFullScreen=\"true\"></iframe>",
+      "width": "100%",
+      "height": "100%"
+    },
+    {
+      "id": "3",
+      "embed_code": "<iframe title=\"View_3\" width=\"600\" height=\"373.5\" src=\"https://app.powerbi.com/view?r=eyJrIjoiNzI0Y2E0YTktMWMwZS00MWJkLWJmNmEtYWRmZDdlMmI0ZGI4IiwidCI6Ijg1NjAyOTA4LWUxNWItNDNiYS05MTQ4LTM4YmM3NzNhODE2ZSIsImMiOjl9\" frameborder=\"0\" allowFullScreen=\"true\"></iframe>",
+      "width": "100%",
+      "height": "100%"
+    },
+    {
+      "id": "4",
+      "embed_code": "<iframe title=\"View_4\" width=\"600\" height=\"373.5\" src=\"https://app.powerbi.com/view?r=eyJrIjoiZDVhNDJjYWMtYjMzNS00ZDMxLTk5YzItZWMzYTAyMGI4ZTg1IiwidCI6Ijg1NjAyOTA4LWUxNWItNDNiYS05MTQ4LTM4YmM3NzNhODE2ZSIsImMiOjl9\" frameborder=\"0\" allowFullScreen=\"true\"></iframe>",
+      "width": "100%",
+      "height": "100%"
+    },
+    {
+      "id": "5",
+      "embed_code": "<iframe title=\"View_5\" width=\"600\" height=\"373.5\" src=\"https://app.powerbi.com/view?r=eyJrIjoiYmRhYjUxNWEtZTJkMC00OWRjLWIzMTgtYmRiMzY0YTVhMzFhIiwidCI6Ijg1NjAyOTA4LWUxNWItNDNiYS05MTQ4LTM4YmM3NzNhODE2ZSIsImMiOjl9\" frameborder=\"0\" allowFullScreen=\"true\"></iframe>",
+      "width": "100%",
+      "height": "100%"
+    }
+  ]
+}
