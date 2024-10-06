@@ -8,7 +8,7 @@ const MapSegment = () => {
                 <div className="grid-item grid-item-2">
                     <h2>In 2011, PennState University led INFLUX
                     </h2>
-                    <p>A program funded by NSIT, located in Indianapolis to develop a better approach to measure climate change for urban environments.
+                    <p>A program funded by NIST, located in Indianapolis to develop a better approach to measure climate change for urban environments.
                     </p>
                 </div>
 
