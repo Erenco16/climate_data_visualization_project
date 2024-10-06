@@ -3,7 +3,8 @@ const MapSegment = () => {
     return (
         <section>
             <div className="map-segment-wrapper">
-                <div className="grid-item grid-item-1">This is where will the map go</div>
+                <div className="grid-item grid-item-1 map-item"><img src="../map.png"/>
+                </div>
                 <div className="grid-item grid-item-2">
                     <h2>In 2011, PennState University led INFLUX
                     </h2>

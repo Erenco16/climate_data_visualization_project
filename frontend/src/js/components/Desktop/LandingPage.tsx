@@ -1,7 +1,7 @@
 import React, {useState, useEffect, useRef, CSSProperties} from "react";
 import Header from './Header';
 import ViewOne from "./ViewOne";
-import ViewTwo from "../Mobile/ViewTwo";
+import ViewTwo from "./ViewTwo";
 import {motion} from "framer-motion";
 import TypingEffect from "../TypingEffect";
 
