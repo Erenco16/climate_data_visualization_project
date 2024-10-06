@@ -5,26 +5,55 @@ const MapSegment = () => {
             <div className="map-segment-wrapper">
                 <div className="grid-item grid-item-1">This is where will the map go</div>
                 <div className="grid-item grid-item-2">
-                    <h2>Lorem ipsum dolor sit amet.
+                    <h2>In 2011, PennState University led INFLUX
                     </h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nisi nibh, molestie quis elit sed, convallis dapibus metus. Duis euismod.
+                    <p>A program funded by NSIT, located in Indianapolis to develop a better approach to measure climate change for urban environments.
                     </p>
                 </div>
+
                 <div className="grid-item grid-item-3">
-                    <div className="grid-item-3 item-1">Lorem ipsum dolor</div>
-                    <div className="grid-item-3 item-2">Light Bulb Img</div>
-                    <div className="grid-item-3 item-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum odio metus, aliquet.</div>
-                </div>
-                <div className="grid-item grid-item-4">
-                    <div className="grid-item-3 item-1">Lorem ipsum dolor</div>
-                    <div className="grid-item-3 item-2">Microscope Img</div>
-                    <div className="grid-item-3 item-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum odio metus, aliquet.</div>
-                </div>
-                <div className="grid-item grid-item-5">
-                    <div className="grid-item-3 item-1">Lorem ipsum dolor</div>
-                    <div className="grid-item-3 item-2">Poisonous Img</div>
-                    <div className="grid-item-3 item-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum odio metus.</div>
+                    <div className="item-1">
+                        <h3>Cavity ring-down spectroscopy (CRDS)</h3>
                     </div>
+                    <div className="item-2">
+                        <div className="circle-img">
+                            <img src="../svg/light-bulb.svg" />
+                        </div>
+                    </div>
+                    <div className="item-3">
+                        <p>Is a trace-gas analysis instrument that can measure nearly every small gas-phase molecule (e.g., CO2, H20) with superb precision</p>
+                    </div>
+                </div>
+
+                <div className="grid-item grid-item-4">
+                    <div className="item-1">
+                        <h3>The Indianapolis Flux Experiment (INFLUX)</h3>
+                    </div>
+                    <div className="item-2">
+                        <div className="circle-img">
+                            <img src="../svg/microscope-svg.svg" />
+                        </div>
+                    </div>
+                    <div className="item-3">
+                        <p>Is the initial research on improving methods of environmental measurements, experimenting on ground and aerial measuring methods.</p>
+                    </div>
+                </div>
+
+                <div className="grid-item grid-item-5">
+                    <div className="item-1">
+                        <h3>CO2, CH4, CO and H2O%</h3>
+                    </div>
+                    <div className="item-2">
+                        <div className="circle-img">
+                            <img src="../svg/poison-svg.svg" />
+                        </div>
+                    </div>
+                    <div className="item-3">
+                        <p>Are known as Greenhouse Gases; some are harmful to wildlife and humans, but all of them are harmful to the environment.</p>
+                    </div>
+                </div>
+
+
             </div>
         </section>
     )
