@@ -312,6 +312,77 @@ section > p {
   left: 0;
 }
 
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height to center vertically */
+  text-align: center;
+}
+
+/* Adjust spacing between buttons */
+.button-container {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Styling for the first button */
+.b1 {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 2px solid #00684A;
+  background-color: #00684A;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Styling for the second button */
+.b2 {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 2px solid var(--white);
+  background-color: var(--SlateBlue);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Hover effects for buttons */
+.b1:hover {
+  background-color: #004C39;
+}
+
+.b2:hover {
+  background-color: var(--evergreen);
+  border: var(--evergreen);
+}
+
+.map-segment-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 10px;
+}
+
+.grid-item-1 {
+  grid-column: span 2;
+}
+
+.grid-item-2, .grid-item-3, .grid-item-4, .grid-item-5 {
+  grid-column: span 1;
+}
+.grid-item-3, .grid-item-4, .grid-item-5{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 10px;
+}
 @media (max-width: 800px) {
 
   .progressBar {

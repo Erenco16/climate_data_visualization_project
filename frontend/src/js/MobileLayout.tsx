@@ -1,7 +1,7 @@
 import React from "react";
-import MobileLandingPage from "./components/MobileLandingPage";
+import MobileLandingPage from "./components/Mobile/MobileLandingPage";
 import {motion, useScroll, useSpring} from "framer-motion";
-import MobileCharts from "./components/MobileCharts";
+import MobileCharts from "./components/Mobile/MobileCharts";
 
 const MobileLayout = () => {
     const { scrollYProgress } = useScroll();

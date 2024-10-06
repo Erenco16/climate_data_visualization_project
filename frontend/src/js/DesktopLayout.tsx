@@ -1,8 +1,6 @@
 import React, {useState} from "react";
 import {motion, useScroll, useSpring} from "framer-motion";
-import LandingPage from "./components/LandingPage";
-import ViewOne from "./components/ViewOne";
-import ViewTwo from "./components/ViewTwo";
+import LandingPage from "./components/Desktop/LandingPage";
 
 const DesktopLayout = () => {
 
