@@ -68,11 +68,13 @@ const LandingPage = () => {
                         <h1 style={TitleStyle}>A Study and Analysis of <a href="https://science.nasa.gov/climate-change/what-is-climate-change/" target="_blank">Climate Change</a></h1>
                     </motion.div>
                     <motion.div>
+                        <h2>
                         <TypingEffect
                             text="And a story of how we interpret data"
                             typingSpeed={100}
                             className="fade-in"
                         />
+                        </h2>
                     </motion.div>
                     <div className="button-container">
                         <motion.button

@@ -1,5 +1,8 @@
 import React from "react";
+import TypingEffect from "../TypingEffect";
+import {motion} from "framer-motion";
 const MapSegment = () => {
+    
     return (
         <section>
             <div className="map-segment-wrapper">
@@ -11,7 +14,17 @@ const MapSegment = () => {
                 <div className="grid-item grid-item-2">
                     <h2>In <a href="https://earth.gov/ghgcenter/data-catalog/influx-testbed-ghg-concentrations">2011</a>, <a href="https://www.psu.edu/" target="_blank">PennState University</a> led INFLUX
                     </h2>
-                    <p>A program funded by <a href="https://www.nist.gov/" target="_blank">NIST</a>, located in Indianapolis to develop a better approach to measure climate change for urban environments.
+                    <p>
+                        <TypingEffect
+                            text="A program funded by "
+                            typingSpeed={20}
+                            className="fade-in"
+                        /> <a href="https://www.nist.gov/" target="_blank">NIST</a>
+                        <TypingEffect
+                            text=", located in Indianapolis to develop a better approach to measure climate change for urban environments."
+                            typingSpeed={20}
+                            className="fade-in"
+                        />
                     </p>
                 </div>
 
@@ -26,7 +39,18 @@ const MapSegment = () => {
                         </div>
                     </div>
                     <div className="item-3">
-                        <p>Is a trace-gas analysis instrument that can measure nearly every small <a href="https://www.sciencedirect.com/topics/engineering/gas-phase" target="_blank">gas-phase</a> molecule (e.g., CO2, H20) with superb precision</p>
+                        <p>
+                        <TypingEffect
+                            text="Is a trace-gas analysis instrument that can measure nearly every small "
+                            typingSpeed={20}
+                            className="fade-in"
+                        />
+                        <a href="https://www.sciencedirect.com/topics/engineering/gas-phase" target="_blank">gas-phase </a>
+                        <TypingEffect
+                            text="molecule (e.g., CO2, H20) with superb precision"
+                            typingSpeed={20}
+                            className="fade-in"
+                        /> </p>
                     </div>
                 </div>
 
@@ -40,7 +64,13 @@ const MapSegment = () => {
                         </div>
                     </div>
                     <div className="item-3">
-                        <p>Is the initial research on improving methods of environmental measurements, experimenting on <a href="https://www.researchgate.net/publication/258625198_Urban-Dome_GHG_Monitoring_Challenges_and_Perspectives_from_the_INFLUX_Project" target="_blank">ground and aerial measuring methods.</a></p>
+                        <p>
+                        <TypingEffect
+                            text="Is the initial research on improving methods of environmental measurements, experimenting on "
+                            typingSpeed={20}
+                            className="fade-in"
+                        />
+                        <a href="https://www.researchgate.net/publication/258625198_Urban-Dome_GHG_Monitoring_Challenges_and_Perspectives_from_the_INFLUX_Project" target="_blank">ground and aerial measuring methods.</a></p>
                     </div>
                 </div>
 
@@ -54,7 +84,18 @@ const MapSegment = () => {
                         </div>
                     </div>
                     <div className="item-3">
-                        <p>Are known as <a href="https://science.nasa.gov/climate-change/faq/what-is-the-greenhouse-effect/" target="_blank">Greenhouse Gases</a>; some are harmful to wildlife and humans, but all of them are harmful to the environment.</p>
+                        <p>
+                        <TypingEffect
+                            text="Are known as "
+                            typingSpeed={20}
+                            className="fade-in"
+                        />  
+                        <a href="https://science.nasa.gov/climate-change/faq/what-is-the-greenhouse-effect/" target="_blank">Greenhouse Gases</a>; 
+                        <TypingEffect
+                            text="  some are harmful to wildlife and humans, but all of them are harmful to the environment."
+                            typingSpeed={20}
+                            className="fade-in"
+                        /></p>
                     </div>
                 </div>
 

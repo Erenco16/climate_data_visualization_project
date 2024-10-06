@@ -20,7 +20,7 @@ const TypingEffect: React.FC<TypingEffectProps> = ({ text, typingSpeed = 100, cl
         }
     }, [currentCharIndex, text, typingSpeed]);
 
-    return <h2 className={className}>{displayedText}</h2>;
+    return <>{displayedText}</>;
 };
 
 export default TypingEffect;
