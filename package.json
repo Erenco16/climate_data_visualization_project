@@ -1,5 +1,7 @@
 {
   "dependencies": {
-    "firebase": "^10.14.0"
+    "@types/react": "^18.3.11",
+    "firebase": "^10.14.0",
+    "react": "^18.3.1"
   }
 }

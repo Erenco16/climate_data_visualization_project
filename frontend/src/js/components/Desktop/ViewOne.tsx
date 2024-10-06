@@ -1,6 +1,7 @@
 import React from "react";
 import Charts from "./Charts";
 import MapSegment from "./MapSegment";
+import ParticleCanvas from "../ParticleField";
 const ViewOne = () => {
 
     const titles = [
@@ -19,6 +20,7 @@ const ViewOne = () => {
     return (
         <>
             <MapSegment/>
+            <ParticleCanvas/>
             {[1, 2, 3, 4, 5].map((id) => (
                 <Charts key={id} id={id} jsonFileName={"./presentations.json"} texts={texts} titles={titles}/>
             ))}</>
