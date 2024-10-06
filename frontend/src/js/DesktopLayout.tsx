@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import {motion, useScroll, useSpring} from "framer-motion";
 import LandingPage from "./components/Desktop/LandingPage";
+import DesktopFooter from "./components/Desktop/DesktopFooter";
 
 const DesktopLayout = () => {
 
@@ -16,6 +17,7 @@ const DesktopLayout = () => {
         <>
             <LandingPage/>
             <motion.div className="progressBar" style={{ scaleX }} />
+            <DesktopFooter/>
         </>
     )
 }
