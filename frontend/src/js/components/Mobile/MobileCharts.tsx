@@ -1,15 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { motion, useScroll, useSpring } from 'framer-motion';
 
-const MobileCharts = ({ id, jsonFileName }: { id: number; jsonFileName: string }) => {
+const MobileCharts = ({ id, jsonFileName, titles, texts }: { id: number; jsonFileName: string, titles: Array<string>, texts: Array<string> }) => {
     const [iframes, setIframes] = useState<Array<any>>([]);
     const ref = useRef(null);
     const { scrollYProgress } = useScroll({ target: ref });
 
-    const titles = [
-        "Positive Graphs",
-        "True Data example",
-        "Overview Real Data",]
 
     const scaleY = useSpring(scrollYProgress, {
         stiffness: 100,
@@ -33,6 +29,7 @@ const MobileCharts = ({ id, jsonFileName }: { id: number; jsonFileName: string }
             <section className="mobile-section">
                 <div className="mobile-title-wrapper">
                     <motion.h1>{titles[id - 1]}</motion.h1>
+                    <h3>{texts[id - 1]}</h3>
                 </div>
                 <div ref={ref}>
                     {iframes.length > 0 && id <= iframes.length && (

@@ -2,19 +2,31 @@
   "embeds": [
     {
       "id": "1",
-      "embed_code": "<img src='/image.png' alt='chart' width='100%' height='100%' />",
+      "embed_code": "<img src='../mobile_dashboards/image.png' alt='chart' width='100%' height='100%' />",
       "width": "100%",
       "height": "100%"
     },
     {
       "id": "2",
-      "embed_code": "<img src='/image.png' alt='chart' width='100%' height='100%' />",
+      "embed_code": "<img src='../mobile_dashboards/image-2.png' alt='chart' width='100%' height='100%' />",
       "width": "100%",
       "height": "100%"
     },
     {
       "id": "3",
-      "embed_code": "<img src='/image.png' alt='chart' width='100%' height='100%' />",
+      "embed_code": "<img src='../mobile_dashboards/image-3.png' alt='chart' width='100%' height='100%' />",
+      "width": "100%",
+      "height": "100%"
+    },
+    {
+      "id": "4",
+      "embed_code": "<img src='../mobile_dashboards/image-4.png' alt='chart' width='100%' height='100%' />",
+      "width": "100%",
+      "height": "100%"
+    },
+    {
+      "id": "5",
+      "embed_code": "<img src='../mobile_dashboards/image-5.png' alt='chart' width='100%' height='100%' />",
       "width": "100%",
       "height": "100%"
     }

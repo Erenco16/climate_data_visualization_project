@@ -539,14 +539,19 @@ a{
     flex-direction: column;
     align-items: center;
   }
-
-  .mobile-title-wrapper{
-    font-size: 5vh;
-    width: 75%;
-    height: 35%;
-    padding: 10px 0;
-    color: var(--springGreen);
-    text-align: center;
+  h1{
+    margin-bottom: 0;
+    margin-top: 3vh;
   }
+
+  .mobile-iframe-container > div {
+    position: absolute;
+    bottom: 20vh;
+  }
+
+  section > div{
+    overflow: unset !important;
+  }
+
 }
 
