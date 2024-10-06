@@ -43,7 +43,7 @@ body {
   h1 {
     font-size: 36px;
     font-weight: 700;
-    letter-spacing: -1px;
+    letter-spacing: 1px;
     line-height: 1.2;
     text-align: center;
     margin: 100px 0 40px;
@@ -60,8 +60,8 @@ body {
 
   h3{
     font-size: 24px;
-    letter-spacing: -1px;
-    line-height: 1.2;
+    letter-spacing: 1px;
+    line-height: 1.5;
     text-align: left;
     font-weight: 600;
   }
@@ -69,48 +69,6 @@ body {
   p {
     text-align: left;
     font-size: 18px;
-  }
-
-  footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 20px;
-    background-image: radial-gradient(
-      rgba(0, 0, 0, 0) 1px,
-      var(--background) 1px
-    );
-    background-size: 4px 4px;
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(3px);
-    -moz-backdrop-filter: blur(3px);
-    font-size: 14px;
-    line-height: 14px;
-  }
-
-  footer::before {
-    display: block;
-    content: "";
-    position: absolute;
-    top: -1px;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: var(--accent);
-    opacity: 0.2;
-  }
-
-  footer svg {
-    margin-right: 20px;
-  }
-
-  footer a {
-    text-decoration: none;
-    color: var(--accent);
   }
 
   code {
@@ -141,7 +99,7 @@ body {
   h1 {
     font-size: 56px;
     font-weight: 700;
-    letter-spacing: -3px;
+    letter-spacing: 1px;
     line-height: 1.2;
     text-align: center;
     margin: 100px 0;
@@ -495,13 +453,13 @@ h3{
 
 
 .map-item {
-  position: relative; /* Position relative to contain absolute elements */
-  overflow: hidden; /* Hide overflow to keep the image contained */
-  display: flex; /* Enable flexbox for centering */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  border-radius: 10px; /* Optional: rounded corners */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: shadow for depth */
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .map-item img {
@@ -526,6 +484,105 @@ a{
   color: var(--springGreen);
 }
 
+.footer-wrapper {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--ash-black);
+}
+
+.footer-section {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-container, .link-section, .nasa-spaceapps-logo {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  justify-content: center;
+}
+
+.logo.footer {
+  height: 35vh;
+  margin-right: 10px;
+}
+
+.link-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.link-section a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.link-section p {
+  margin-top: 10px;
+  color: white;
+  text-align: center;
+}
+
+.contributors-section {
+  background-color: var(--ash-black);
+  text-align: center;
+  color: white;
+  padding: 10px 0;
+  font-size: 1.2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contributors-section {
+  background-color: var(--dark-gray);
+  text-align: center;
+  color: #ffffff;
+  padding: 30px 20px;
+  font-size: 1.4rem;
+  font-family: 'Georgia', serif;
+  border-top: 2px solid var(--light-gray);
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.contributors-section p {
+  margin: 0;
+  padding: 10px 0;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+.contributors-section p:hover {
+  color: var(--gold);
+}
+
+.contributors-section::before {
+  content: "✨";
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contributors-section::after {
+  content: "✨";
+  font-size: 2rem;
+  display: block;
+  margin-top: 10px;
+}
+
+
 @media (max-width: 800px) {
 
   .progressBar {
@@ -546,12 +603,39 @@ a{
 
   .mobile-iframe-container > div {
     position: absolute;
-    bottom: 20vh;
+    bottom: 3vh;
   }
 
   section > div{
     overflow: unset !important;
   }
-
 }
 
+/* for the mobile footer */
+@media (max-width: 768px) {
+  .footer-section{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo.footer {
+    height: 20vh;
+    max-height: 80px;
+  }
+
+  .contributors-section {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contributors-section {
+    font-size: 1rem;
+    padding: 20px 10px;
+  }
+
+  .contributors-section::before,
+  .contributors-section::after {
+    font-size: 1.5rem;
+  }
+}
